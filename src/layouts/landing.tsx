@@ -16,10 +16,6 @@ export const LandingLayout: FunctionComponent = ({ children }) => {
       label: 'Privacy'
     },
     {
-      href: '/help',
-      label: 'Help'
-    },
-    {
       href: 'https://github.com/bother',
       label: 'GitHub'
     }
@@ -52,7 +48,7 @@ export const LandingLayout: FunctionComponent = ({ children }) => {
       <footer className="flex-col items-center text-sm text-gray-600">
         <div>&#169; {getYear(new Date())} Bother. All rights reserved.</div>
 
-        <nav className="flex flex-col mt-4 space-y-1 text-center lg:flex-row lg:space-y-0 lg:space-x-2">
+        <nav className="flex flex-col justify-center mt-4 space-y-1 lg:flex-row lg:space-y-0 lg:space-x-2">
           {footerLinks.map(({ href, label }) => (
             <Link href={href} key={href}>
               <a className="text-gray-800 first:mt-0">{label}</a>
